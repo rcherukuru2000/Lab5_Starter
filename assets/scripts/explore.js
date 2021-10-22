@@ -34,8 +34,9 @@ function init() {
       
     }
 
-    //HOW TO MAKE THE MOUTH CLOSE?
-
+    utterance.onend = function() {
+      img.src = "assets/images/smiling.png";
+    }
 
   });
   
