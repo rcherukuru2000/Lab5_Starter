@@ -14,14 +14,15 @@ function init() {
   function populateVoiceList() {
   
     vArr = speechSynth.getVoices()  //Stores voices into arr
-    vSelect.innerHTML = '';
   
     /* Lops through our voices array */
     for(let iterator = 0; iterator < vArr.length; iterator++) {
       var opt = document.createElement('option'); 
       opt.textContent = vArr[iterator].name + ' (' + vArr[iterator].lang + ')';
+
       opt.setAttribute('data-lang', vArr[iterator].lang);
       opt.setAttribute('data-name', vArr[iterator].name);
+      
       vSelect.appendChild(opt);
     }
   
