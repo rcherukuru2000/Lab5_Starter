@@ -5,8 +5,8 @@
 
 ### Part 1
 
-- [Expose](/expose.html)
-- [Explore](/expose.html)
+- [Expose](https://rcherukuru2000.github.io/Lab5_Starter/expose.html)
+- [Explore](https://rcherukuru2000.github.io/Lab5_Starter/explore.html)
 
 ### Part 2
 
