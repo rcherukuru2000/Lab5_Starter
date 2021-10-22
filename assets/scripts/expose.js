@@ -13,6 +13,7 @@ function init() {
   var volInput = document.querySelector("[type='range']");
   var volumeCtrl = document.querySelector("#volume-controls");
   var volImg = volumeCtrl.querySelector('img');
+  const jsConfetti = new JSConfetti();
 
 
   list.addEventListener('change', (event) => {
@@ -51,8 +52,8 @@ function init() {
   btn.addEventListener('click', (event) => {
 
     if (party == true) {
-      const jsConfetti = new JSConfetti();
-      jsConfetti.addConfetti(btn);
+     
+      jsConfetti.addConfetti();
     }
     aud.play();
   })
