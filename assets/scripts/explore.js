@@ -33,7 +33,7 @@ function init() {
       img.src = "assets/images/smiling-open.png";
       
     }
-
+    /* The below will make the img the close mouth */
     utterance.onend = function() {
       img.src = "assets/images/smiling.png";
     }
