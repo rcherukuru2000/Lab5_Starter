@@ -1,4 +1,4 @@
 # Lab 5 - Starter
 
-Raghav Cherukuru
-Aditya Moghe
+- Raghav Cherukuru
+- Aditya Moghe  
