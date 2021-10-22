@@ -10,6 +10,7 @@ function init() {
   let speechSynth = window.speechSynthesis; //variale used for Speech Synthesis
   let vArr = [];  //Empty array that stores the voices
   var btn = document.querySelector("button");
+  var img = document.querySelector("img");
 
   
   btn.addEventListener('click', () => {
@@ -21,9 +22,20 @@ function init() {
       if(vArr[iterator].name === opt){    
         utterance.voice = vArr[iterator];
       }
-  }
+    }
 
-  speechSynth.speak(utterance);  //Speak input text
+    speechSynth.speak(utterance);  //Speak input text
+
+    var currSpeaking = speechSynth.speaking;
+
+    /* The below will make the img the Open mouth */
+    if(currSpeaking == true){
+      img.src = "assets/images/smiling-open.png";
+      
+    }
+
+    //HOW TO MAKE THE MOUTH CLOSE?
+
 
   });
   
