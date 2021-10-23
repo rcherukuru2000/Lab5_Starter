@@ -50,7 +50,7 @@ function init() {
   })
 
   btn.addEventListener('click', (event) => {
-    if (party == true) {
+    if (party == true && volInput.value != 0) {
       jsConfetti.addConfetti();
     }
     aud.play();
